@@ -5,10 +5,10 @@
   "packageManager": "pnpm@10.13.1",
   "scripts": {
     "dev": "turbo run dev",
-    "build": "turbo run build",
+    "build": "node --max_old_space_size=2048 ./node_modules/.bin/turbo run build",
     "start": "turbo run start"
   },
-  "devDependencies": {
+  "dependencies": {
     "turbo": "^2.5.5"
   }
 }
